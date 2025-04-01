@@ -5,164 +5,185 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E.svg?logo=javascript)
 ![ESLint](https://img.shields.io/badge/ESLint-8.x-4B32C3.svg?logo=eslint)
 
-Un moderno boilerplate per applicazioni web JavaScript con bundler Vite. Progettato per offrire un'esperienza di sviluppo veloce e ottimizzata con un approccio minimalista e leggero, supportando funzionalità 100% offline.
+A modern JavaScript web application boilerplate with Vite bundler. Designed to offer a fast and optimized development experience with a minimalist and lightweight approach, supporting 100% offline functionality.
+
+**Topics:** `javascript` `vite` `web-app` `spa` `offline-first` `local-storage` `minimal` `lightweight` `esm`
 
 ## 📋 Table of Contents
 - [Features](#-features)
 - [Project Structure](#-project-structure)
-- [Setup & Development](#-setup--development)
+- [Project Setup](#-project-setup)
 - [Package Managers](#-package-managers)
 - [Resources](#-resources)
 
 ## ✨ Features
 
-- 🔄 Hot Module Replacement (HMR) per sviluppo rapido
-- ⚡ Vite per un bundling ultra-veloce
-- 💾 Supporto completo per funzionalità offline (localStorage)
-- 📤 Possibilità di implementare export/backup dei dati
-- 📊 Struttura per implementare dashboard e statistiche
-- 🗓️ Supporto per timeline e viste calendario
-- 🔍 Configurazione ESLint integrata
-- 🌐 Web application ottimizzata per la distribuzione
+- 🔄 Hot Module Replacement (HMR) for rapid development
+- ⚡ Ultra-fast build with Vite bundler
+- 💾 Complete support for offline functionality (localStorage)
+- 📤 Import/export and backup capabilities
+- 📊 Support for dashboard and statistical visualizations
+- 🗓️ Ability to implement timeline and calendar views
+- 🔍 ESLint configuration for code quality
+- 📦 ES Module support
+- 🎨 Vanilla JavaScript with modern ES6+ features
 
 ## 🗂️ Project Structure
 
 ```
 bl-vitejs-javascript/
-├── public/             # Risorse statiche
+├── public/             # Static assets
+├── dist/               # Build output directory
 ├── src/
-│   ├── assets/         # Immagini, font e risorse varie
-│   ├── modules/        # Moduli JavaScript
-│   ├── utils/          # Funzioni di utilità
-│   ├── index.html      # Template HTML
-│   ├── style.css       # Stili globali
-│   └── main.js         # Entry point dell'applicazione
-├── .eslintrc.cjs       # Configurazione ESLint
-├── index.html          # Template HTML root
-├── package.json        # Dipendenze e script
-└── vite.config.js      # Configurazione Vite
+│   ├── assets/         # Project assets (images, fonts, etc.)
+│   ├── modules/        # JavaScript modules
+│   ├── utils/          # Utility functions
+│   ├── index.html      # HTML template
+│   ├── style.css       # Global styles
+│   └── main.js         # Application entry point
+├── .eslintrc.cjs       # ESLint configuration
+├── index.html          # HTML template root
+├── package.json        # Project dependencies and scripts
+└── vite.config.js      # Vite configuration
 ```
 
-## 🚀 Setup & Development
+## 🚀 Project Setup
 
-### 📥 Installazione
+### 📥 Install
 
 ```bash
-# Utilizzando NPM
-$ npm install
-
-# Utilizzando Yarn
-$ yarn
-
-# Utilizzando PNPM
 $ pnpm install
 ```
 
-### 🔧 Sviluppo
+### 🔧 Development
 
 ```bash
-# Utilizzando NPM
-$ npm run dev
-
-# Utilizzando Yarn
-$ yarn dev
-
-# Utilizzando PNPM
 $ pnpm dev
 ```
 
 ### 📦 Build
 
 ```bash
-# Utilizzando NPM
-$ npm run build
-
-# Utilizzando Yarn
-$ yarn build
-
-# Utilizzando PNPM
 $ pnpm build
 ```
 
 ### 🔍 Preview
 
 ```bash
-# Utilizzando NPM
-$ npm run preview
-
-# Utilizzando Yarn
-$ yarn preview
-
-# Utilizzando PNPM
 $ pnpm preview
 ```
 
 ## 📦 Package Managers
 
-Questo progetto supporta diversi package manager. Ecco le caratteristiche di ciascuno:
+This project supports multiple package managers. Here's how to use each one:
 
 ### NPM
 
-NPM è il package manager predefinito per Node.js.
+NPM is the default package manager for Node.js.
 
-**Installazione NPM:**
+**Install NPM:**
 ```bash
-# Incluso con l'installazione di Node.js
+# Included with Node.js installation
 ```
 
-**Caratteristiche principali:**
-- 📚 Vasto ecosistema di pacchetti
-- 🔒 Struttura gerarchica di node_modules
-- 📋 Package.json per la gestione delle dipendenze
+**Setup project with NPM:**
+```bash
+# Install dependencies
+$ npm install
+
+# Run development server
+$ npm run dev
+
+# Build application
+$ npm run build
+
+# Preview production build
+$ npm run preview
+```
+
+**Key features:**
+- 📚 Vast package ecosystem
+- 🔒 Hierarchical node_modules structure
+- 📋 Package.json for dependency management
 
 ### Yarn
 
-Yarn è un'alternativa rapida, affidabile e sicura a NPM.
+Yarn is a fast, reliable, and secure alternative to NPM.
 
-**Installazione Yarn:**
+**Install Yarn:**
 ```bash
-# Installazione tramite NPM
+# Install using NPM
 $ npm install -g yarn
 ```
 
-**Caratteristiche principali:**
-- ⚡ Velocità di installazione superiore
-- 📦 Caching offline
-- 🔒 Maggiore sicurezza con checksum
-- 📋 yarn.lock per installazioni deterministiche
+**Setup project with Yarn:**
+```bash
+# Install dependencies
+$ yarn
+
+# Run development server
+$ yarn dev
+
+# Build application
+$ yarn build
+
+# Preview production build
+$ yarn preview
+```
+
+**Key features:**
+- ⚡ Faster installation speeds
+- 📦 Offline caching
+- 🔒 Better security with checksums
+- 📋 yarn.lock for deterministic installations
 
 ### PNPM
 
-PNPM è un package manager efficiente in termini di spazio su disco.
+PNPM is a disk-space efficient package manager.
 
-**Installazione PNPM:**
+**Install PNPM:**
 ```bash
-# Installazione tramite NPM
+# Install using NPM
 $ npm install -g pnpm
 ```
 
-**Caratteristiche principali:**
-- 💾 Risparmio di spazio su disco tramite symlink
-- 🚀 Velocità di installazione elevata
-- 🔄 Storage con indirizzamento basato sul contenuto
-- 📋 pnpm-lock.yaml per blocco delle dipendenze
+**Setup project with PNPM:**
+```bash
+# Install dependencies
+$ pnpm install
 
-### Confronto
+# Run development server
+$ pnpm dev
 
-| Funzionalità          | NPM     | Yarn    | PNPM    |
+# Build application
+$ pnpm build
+
+# Preview production build
+$ pnpm preview
+```
+
+**Key features:**
+- 💾 Disk space savings through symlinks
+- 🚀 Fast installation speeds
+- 🔄 Content-addressable storage
+- 📋 pnpm-lock.yaml for dependency lock
+
+### Comparison
+
+| Feature               | NPM     | Yarn    | PNPM    |
 |-----------------------|---------|---------|---------|
-| Utilizzo disco        | Alto    | Alto    | Basso   |
-| Velocità installazione| Lenta   | Veloce  | Velocissima |
-| Installazioni parallele| Limitato| Sì      | Sì      |
-| Supporto workspaces   | Limitato| Buono   | Ottimo  |
-| Modalità offline      | Limitato| Buono   | Buono   |
-| Sicurezza             | Buona   | Migliore| Migliore|
+| Disk usage            | High    | High    | Low     |
+| Installation speed    | Slow    | Fast    | Fastest |
+| Parallel installations| Limited | Yes     | Yes     |
+| Workspace support     | Limited | Good    | Best    |
+| Offline mode          | Limited | Good    | Good    |
+| Security              | Good    | Better  | Better  |
 
 ## 📚 Resources
 
 - [Vite Documentation](https://vitejs.dev/guide/)
-- [JavaScript MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [ESLint Documentation](https://eslint.org/docs/user-guide/)
+- [JavaScript MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [ESLint Documentation](https://eslint.org/docs/user-guide/getting-started)
 - [NPM Documentation](https://docs.npmjs.com/)
 - [Yarn Documentation](https://yarnpkg.com/getting-started)
 - [PNPM Documentation](https://pnpm.io/motivation)
